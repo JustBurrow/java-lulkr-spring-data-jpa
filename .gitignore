@@ -1,7 +1,11 @@
-*.class
+# General #############################################################################################################
+.*.md.html
+*.log
+*.tmp
+*.bak
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Java ignore #########################################################################################################
+*.class
 
 # Package Files #
 *.jar
@@ -10,3 +14,47 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Linux ###############################################################################################################
+*.swp
+*.epoch
+*.lck
+
+# Mac OS X ############################################################################################################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Eclipse #############################################################################################################
+**/.settings
+**/target
+.project
+.classpath
+.factorypath
+.springBeans
+
+# IntelliJ IDEA #######################################################################################################
+*.iml
+/.idea/
+
+# Project #############################################################################################################
+temp
+**/config/*
+!**/config/sample-*
