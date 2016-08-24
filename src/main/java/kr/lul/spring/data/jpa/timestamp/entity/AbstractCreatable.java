@@ -3,7 +3,7 @@
  */
 package kr.lul.spring.data.jpa.timestamp.entity;
 
-import static kr.lul.spring.data.jpa.timestamp.configuration.Trigger.PRE_PERSIST;
+import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_PERSIST;
 import static kr.lul.spring.data.jpa.timestamp.mapping.CreatablMapping.CreatableTable.CREATE_UTC;
 
 import java.time.Instant;
@@ -11,7 +11,8 @@ import java.time.Instant;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
-import kr.lul.spring.data.jpa.timestamp.configuration.Timestamp;
+import kr.lul.data.Creatable;
+import kr.lul.spring.data.jpa.timestamp.annotation.Timestamp;
 
 /**
  * <pre>

@@ -1,9 +1,9 @@
 package kr.lul.spring.data.jpa.timestamp.listener;
 
 import static java.lang.String.format;
-import static kr.lul.spring.data.jpa.timestamp.configuration.Trigger.POST_LOAD;
-import static kr.lul.spring.data.jpa.timestamp.configuration.Trigger.PRE_PERSIST;
-import static kr.lul.spring.data.jpa.timestamp.configuration.Trigger.PRE_UPDATE;
+import static kr.lul.spring.data.jpa.timestamp.Trigger.POST_LOAD;
+import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_PERSIST;
+import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_UPDATE;
 import static kr.lul.util.Asserts.notNull;
 
 import java.lang.reflect.Field;
@@ -20,9 +20,9 @@ import javax.persistence.PostLoad;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 
-import kr.lul.spring.data.jpa.timestamp.configuration.Timestamp;
-import kr.lul.spring.data.jpa.timestamp.configuration.Timestamps;
-import kr.lul.spring.data.jpa.timestamp.configuration.Trigger;
+import kr.lul.spring.data.jpa.timestamp.Trigger;
+import kr.lul.spring.data.jpa.timestamp.annotation.Timestamp;
+import kr.lul.spring.data.jpa.timestamp.annotation.Timestamps;
 import kr.lul.util.MapBuilder;
 import kr.lul.util.TimeProvider;
 

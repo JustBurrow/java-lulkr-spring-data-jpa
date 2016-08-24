@@ -1,7 +1,7 @@
 /**
  *
  */
-package kr.lul.spring.data.jpa.timestamp.configuration;
+package kr.lul.spring.data.jpa.timestamp;
 
 import java.lang.annotation.Annotation;
 

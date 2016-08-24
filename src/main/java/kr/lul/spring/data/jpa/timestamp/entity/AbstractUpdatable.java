@@ -3,7 +3,7 @@
  */
 package kr.lul.spring.data.jpa.timestamp.entity;
 
-import static kr.lul.spring.data.jpa.timestamp.configuration.Trigger.PRE_UPDATE;
+import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_UPDATE;
 import static kr.lul.spring.data.jpa.timestamp.mapping.UpdatableMapping.UpdatableEntity.CREATE;
 import static kr.lul.spring.data.jpa.timestamp.mapping.UpdatableMapping.UpdatableEntity.UPDATE;
 import static kr.lul.spring.data.jpa.timestamp.mapping.UpdatableMapping.UpdatableTable.CREATE_UTC;
@@ -14,7 +14,8 @@ import java.time.Instant;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
-import kr.lul.spring.data.jpa.timestamp.configuration.Timestamp;
+import kr.lul.data.Updatable;
+import kr.lul.spring.data.jpa.timestamp.annotation.Timestamp;
 
 /**
  * 타임스탬프 필드와 메서드를 구현해둔 추상 클래스.

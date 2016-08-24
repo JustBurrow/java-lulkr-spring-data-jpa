@@ -5,7 +5,7 @@ package kr.lul.spring.data.jpa.timestamp.mapping;
 
 import javax.persistence.PrePersist;
 
-import kr.lul.spring.data.jpa.timestamp.configuration.Timestamps;
+import kr.lul.spring.data.jpa.timestamp.annotation.Timestamps;
 
 /**
  * 생성 타임스탬프를 가진 엔티티의 기본적인 매핑 정보.

@@ -12,9 +12,14 @@ import kr.lul.util.Anchor;
 public abstract class TimeConverterAnchor implements Anchor {
   /**
    * @author Just Burrow
+   * @since 2016. 8. 25.
+   */
+  public static final Package PACKAGE      = TimeConverterAnchor.class.getPackage();
+  /**
+   * @author Just Burrow
    * @since 2016. 8. 17.
    */
-  public static final String PACKAGE_NAME = TimeConverterAnchor.class.getPackage().getName();
+  public static final String  PACKAGE_NAME = PACKAGE.getName();
 
   /**
    * @author Just Burrow

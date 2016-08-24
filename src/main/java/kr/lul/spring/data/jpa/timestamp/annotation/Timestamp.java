@@ -1,7 +1,7 @@
 /**
  *
  */
-package kr.lul.spring.data.jpa.timestamp.configuration;
+package kr.lul.spring.data.jpa.timestamp.annotation;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.TYPE;
@@ -9,6 +9,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
+
+import kr.lul.spring.data.jpa.timestamp.Trigger;
 
 /**
  * 엔티티가 언제 타임스탬프를 찍는지 설정한다.
