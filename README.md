@@ -1,2 +1,3 @@
-# java-lulkr-spring-data-jpa
-Spring Data JPA 지원
+# Spring Data Jpa
+
+Spring Data JPA 지원.
