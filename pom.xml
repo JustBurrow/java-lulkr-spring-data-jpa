@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>kr.lul</groupId>
-  <artifactId>spring-data-jpa</artifactId>
+  <artifactId>lulkr-spring-data-jpa</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <properties>
     <!-- Spring -->
@@ -39,7 +39,7 @@
   <dependencies>
     <dependency>
       <groupId>kr.lul</groupId>
-      <artifactId>common</artifactId>
+      <artifactId>lulkr-common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
