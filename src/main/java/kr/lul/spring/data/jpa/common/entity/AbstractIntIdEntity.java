@@ -4,10 +4,12 @@
 package kr.lul.spring.data.jpa.common.entity;
 
 import static kr.lul.spring.data.jpa.common.mapping.IdMapping.IdTable.PK;
+import static kr.lul.util.Asserts.notNull;
 
 import java.util.Objects;
 
 import javax.persistence.Column;
+import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -15,12 +17,14 @@ import javax.persistence.MappedSuperclass;
 
 import kr.lul.data.IntIdDomainObject;
 import kr.lul.spring.data.jpa.timestamp.entity.AbstractUpdatable;
+import kr.lul.spring.data.jpa.timestamp.listener.Timestamper;
 
 /**
  * @author Just Burrow
  * @since 2016. 9. 3.
  */
 @MappedSuperclass
+@EntityListeners({ Timestamper.class })
 public abstract class AbstractIntIdEntity extends AbstractUpdatable implements IntIdDomainObject {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,6 +40,24 @@ public abstract class AbstractIntIdEntity extends AbstractUpdatable implements I
    * @since 2016. 9. 3.
    */
   protected abstract Class<? extends AbstractIntIdEntity> implClass();
+
+  /**
+   * @param source
+   * @return
+   * @author Just Burrow
+   * @since 2016. 9. 26.
+   */
+  protected String toString(StringBuilder source) {
+    notNull(source, "source");
+    StringBuilder sb = new StringBuilder(this.implClass().getSimpleName())
+        .append(" [id=").append(this.id);
+    if (0 < source.length()) {
+      sb.append(", ").append(source);
+    }
+    return sb.append(", create=").append(this.getCreate())
+        .append(", update=").append(this.getUpdate())
+        .append(']').toString();
+  }
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // <I>IntIdentifiableDomainObject<ID>
