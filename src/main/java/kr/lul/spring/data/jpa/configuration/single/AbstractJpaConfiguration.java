@@ -7,6 +7,7 @@ import javax.sql.DataSource;
 
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateExceptionTranslator;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -18,6 +19,7 @@ import org.springframework.transaction.PlatformTransactionManager;
  * @author Just Burrow
  * @since 2016. 9. 26.
  */
+@Configuration
 public abstract class AbstractJpaConfiguration {
   /**
    * @author Just Burrow
