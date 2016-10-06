@@ -11,8 +11,8 @@ import java.time.ZonedDateTime;
 
 import org.junit.Test;
 
-import kr.lul.util.SystemTimeProvider;
-import kr.lul.util.TimeProvider;
+import kr.lul.common.util.SystemTimeProvider;
+import kr.lul.common.util.TimeProvider;
 
 /**
  * @author Just Burrow

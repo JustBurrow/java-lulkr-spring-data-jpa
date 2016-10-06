@@ -11,7 +11,7 @@ import java.time.Instant;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
-import kr.lul.data.Creatable;
+import kr.lul.common.data.Creatable;
 import kr.lul.spring.data.jpa.timestamp.annotation.Timestamp;
 
 /**

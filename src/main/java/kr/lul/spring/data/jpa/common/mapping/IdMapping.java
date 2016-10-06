@@ -3,9 +3,9 @@
  */
 package kr.lul.spring.data.jpa.common.mapping;
 
-import kr.lul.data.IntIdDomainObject;
-import kr.lul.data.LongIdDomainObject;
-import kr.lul.data.ObjectIdDomainObject;
+import kr.lul.common.data.IntIdDomainObject;
+import kr.lul.common.data.LongIdDomainObject;
+import kr.lul.common.data.ObjectIdDomainObject;
 import kr.lul.spring.data.jpa.timestamp.mapping.UpdatableMapping;
 
 /**

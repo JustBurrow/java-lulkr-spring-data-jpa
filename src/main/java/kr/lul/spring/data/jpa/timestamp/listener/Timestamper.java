@@ -1,10 +1,10 @@
 package kr.lul.spring.data.jpa.timestamp.listener;
 
 import static java.lang.String.format;
+import static kr.lul.common.util.Asserts.notNull;
 import static kr.lul.spring.data.jpa.timestamp.Trigger.POST_LOAD;
 import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_PERSIST;
 import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_UPDATE;
-import static kr.lul.util.Asserts.notNull;
 
 import java.lang.reflect.Field;
 import java.time.Instant;
@@ -20,11 +20,11 @@ import javax.persistence.PostLoad;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 
+import kr.lul.common.util.MapBuilder;
+import kr.lul.common.util.TimeProvider;
 import kr.lul.spring.data.jpa.timestamp.Trigger;
 import kr.lul.spring.data.jpa.timestamp.annotation.Timestamp;
 import kr.lul.spring.data.jpa.timestamp.annotation.Timestamps;
-import kr.lul.util.MapBuilder;
-import kr.lul.util.TimeProvider;
 
 /**
  * 어노테이션 기반의 JPA 2.1 규격의 엔티티에 {@link Timestamp}, {@link Timestamps}를 사용한 엔티티에 타임스탬프를 찍는 {@link EntityListeners}.

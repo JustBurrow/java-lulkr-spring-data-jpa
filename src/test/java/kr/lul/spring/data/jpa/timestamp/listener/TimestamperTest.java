@@ -3,10 +3,10 @@
  */
 package kr.lul.spring.data.jpa.timestamp.listener;
 
+import static kr.lul.common.util.RandomUtil.R;
 import static kr.lul.spring.data.jpa.timestamp.Trigger.POST_LOAD;
 import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_PERSIST;
 import static kr.lul.spring.data.jpa.timestamp.Trigger.PRE_UPDATE;
-import static kr.lul.util.RandomUtil.R;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
@@ -19,7 +19,7 @@ import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.Before;
 import org.junit.Test;
 
-import kr.lul.data.Updatable;
+import kr.lul.common.data.Updatable;
 import kr.lul.spring.data.jpa.timestamp.annotation.Timestamp;
 import kr.lul.spring.data.jpa.timestamp.annotation.Timestamps;
 import lombok.Data;

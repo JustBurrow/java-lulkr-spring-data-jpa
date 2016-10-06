@@ -3,7 +3,7 @@
  */
 package kr.lul.spring.data.jpa.time.converter;
 
-import kr.lul.util.Anchor;
+import kr.lul.common.util.Anchor;
 
 /**
  * @author Just Burrow

@@ -3,8 +3,8 @@
  */
 package kr.lul.spring.data.jpa.common.entity;
 
+import static kr.lul.common.util.Asserts.notNull;
 import static kr.lul.spring.data.jpa.common.mapping.IdMapping.IdTable.PK;
-import static kr.lul.util.Asserts.notNull;
 
 import java.util.Objects;
 
@@ -15,7 +15,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
-import kr.lul.data.IntIdDomainObject;
+import kr.lul.common.data.IntIdDomainObject;
 import kr.lul.spring.data.jpa.timestamp.entity.AbstractUpdatable;
 import kr.lul.spring.data.jpa.timestamp.listener.Timestamper;
 

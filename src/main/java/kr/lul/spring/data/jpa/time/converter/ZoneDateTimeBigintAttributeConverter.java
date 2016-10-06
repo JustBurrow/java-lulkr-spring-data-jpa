@@ -3,7 +3,7 @@
  */
 package kr.lul.spring.data.jpa.time.converter;
 
-import static kr.lul.util.Asserts.notNull;
+import static kr.lul.common.util.Asserts.notNull;
 
 import java.time.Instant;
 import java.time.ZonedDateTime;
@@ -11,8 +11,8 @@ import java.time.ZonedDateTime;
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
-import kr.lul.util.SystemTimeProvider;
-import kr.lul.util.TimeProvider;
+import kr.lul.common.util.SystemTimeProvider;
+import kr.lul.common.util.TimeProvider;
 
 /**
  * @author Just Burrow
