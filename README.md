@@ -1,3 +1,3 @@
-# Spring Data Jpa
+# Spring
 
-Spring Data JPA 지원.
+Spring 지원 모듈
